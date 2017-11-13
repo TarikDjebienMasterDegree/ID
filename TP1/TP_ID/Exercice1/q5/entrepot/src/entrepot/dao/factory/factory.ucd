@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="factory" size="1028,520" id="entrepot.dao.factory" metadata="uml2-1.0" initialized="true" scrolledY="43" tag="1000" key="32303037303533312D3130303020656E747265706F742F746172696B">
+  <children xsi:type="editmodel:ClassEditModel" name="BddDAOFactory" location="50,315" size="193,185" id="entrepot.dao.factory/BddDAOFactory" runTimeClassModel="getFait_achatDAO(),getClientDAO(),conn,getTempsDAO(),getVendeurDAO(),getFait_ventesDAO(),getCategorieDAO(),getProduitDAO(),getFournisseurDAO()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="111,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="conn" id="entrepot.dao.factory/BddDAOFactory#conn"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="170,120">
+      <children xsi:type="editmodel:MethodEditModel" name="getCategorieDAO" id="entrepot.dao.factory/BddDAOFactory#getCategorieDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClientDAO" id="entrepot.dao.factory/BddDAOFactory#getClientDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFait_achatDAO" id="entrepot.dao.factory/BddDAOFactory#getFait_achatDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFait_ventesDAO" id="entrepot.dao.factory/BddDAOFactory#getFait_ventesDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFournisseurDAO" id="entrepot.dao.factory/BddDAOFactory#getFournisseurDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getProduitDAO" id="entrepot.dao.factory/BddDAOFactory#getProduitDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTempsDAO" id="entrepot.dao.factory/BddDAOFactory#getTempsDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getVendeurDAO" id="entrepot.dao.factory/BddDAOFactory#getVendeurDAO()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.2/@sourceConnections.0" autoLocated="true" id="entrepot.dao.factory/AbstractDAOFactory&lt;-entrepot.dao.factory/BddDAOFactory" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="96,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="119,215" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="AbstractDAOFactory" location="138,50" size="239,215" id="entrepot.dao.factory/AbstractDAOFactory" runTimeClassModel="getFait_achatDAO(),getClientDAO(),getTempsDAO(),getVendeurDAO(),getFait_ventesDAO(),bDD_DAO_FACTORY,getCategorieDAO(),getFactory(I),getProduitDAO(),xML_DAO_FACTORY,getFournisseurDAO()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="143,30">
+      <children xsi:type="editmodel:AttributeEditModel" name="bDD_DAO_FACTORY" id="entrepot.dao.factory/AbstractDAOFactory#bDD_DAO_FACTORY"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="xML_DAO_FACTORY" id="entrepot.dao.factory/AbstractDAOFactory#xML_DAO_FACTORY"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="216,135">
+      <children xsi:type="editmodel:MethodEditModel" name="getCategorieDAO" id="entrepot.dao.factory/AbstractDAOFactory#getCategorieDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClientDAO" id="entrepot.dao.factory/AbstractDAOFactory#getClientDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFactory" id="entrepot.dao.factory/AbstractDAOFactory#getFactory(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFait_achatDAO" id="entrepot.dao.factory/AbstractDAOFactory#getFait_achatDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFait_ventesDAO" id="entrepot.dao.factory/AbstractDAOFactory#getFait_ventesDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFournisseurDAO" id="entrepot.dao.factory/AbstractDAOFactory#getFournisseurDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getProduitDAO" id="entrepot.dao.factory/AbstractDAOFactory#getProduitDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTempsDAO" id="entrepot.dao.factory/AbstractDAOFactory#getTempsDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getVendeurDAO" id="entrepot.dao.factory/AbstractDAOFactory#getVendeurDAO()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XmlDAOFactory" location="273,315" size="193,170" id="entrepot.dao.factory/XmlDAOFactory" runTimeClassModel="getFait_achatDAO(),getClientDAO(),getTempsDAO(),getVendeurDAO(),getFait_ventesDAO(),getCategorieDAO(),getProduitDAO(),getFournisseurDAO()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="170,120">
+      <children xsi:type="editmodel:MethodEditModel" name="getCategorieDAO" id="entrepot.dao.factory/XmlDAOFactory#getCategorieDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClientDAO" id="entrepot.dao.factory/XmlDAOFactory#getClientDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFait_achatDAO" id="entrepot.dao.factory/XmlDAOFactory#getFait_achatDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFait_ventesDAO" id="entrepot.dao.factory/XmlDAOFactory#getFait_ventesDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFournisseurDAO" id="entrepot.dao.factory/XmlDAOFactory#getFournisseurDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getProduitDAO" id="entrepot.dao.factory/XmlDAOFactory#getProduitDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTempsDAO" id="entrepot.dao.factory/XmlDAOFactory#getTempsDAO()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getVendeurDAO" id="entrepot.dao.factory/XmlDAOFactory#getVendeurDAO()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="entrepot.dao.factory/AbstractDAOFactory&lt;-entrepot.dao.factory/XmlDAOFactory" source="//@children.2" target="//@children.0/@sourceConnections.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="96,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

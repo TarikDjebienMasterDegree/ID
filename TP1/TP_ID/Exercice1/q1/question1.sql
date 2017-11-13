@@ -1,0 +1,59 @@
+-- Question 1 : IMPLEMENTATION DES TABLES ILLUSTREES EN ANNEXE
+-- author : Djebien Tarik
+-- date : 29/10/2011
+
+create table categorie (
+code_categorie varchar2(20) constraint categorie_pkey primary key,
+nom_categorie varchar2(30),
+description varchar2(255),
+illustration_url varchar2(255)
+);
+
+create table produit (
+ref_produit varchar2(20) constraint produit_pkey primary key,
+nom_produit varchar2(30),
+code_categorie varchar2(20) constraint produit_categorie_fkey references categorie(code_categorie),
+quantite_unite varchar2(20),
+prix_unite number(10),
+unite_stock number(10),
+unite_commandee number(10),
+niveau_reappro number(10),
+indisponible number(1) constraint indispo_enum check (indisponible in (0,1))
+);
+
+create table client (
+code_client varchar2(5) constraint client_pkey primary key,
+societe varchar2(255),
+contact varchar2(255),
+fonction varchar2(255),
+adresse varchar2(255),
+ville varchar2(32),
+region varchar2(32),
+code_postal varchar2(8),
+pays varchar2(15),
+telephone varchar2(20),
+fax varchar2(20)
+);
+
+create table commande (
+num_commande number(10) constraint commande_pkey primary key,
+ref_client varchar2(5) constraint commande_client_fkey references client(code_client),
+date_commande date not null,
+date_lim_livraison date,
+date_envoi date,
+port number(10),
+destinataire varchar2(32),
+adresse varchar2(255),
+ville varchar2(32),
+region varchar2(32),
+code_postal varchar2(8),
+pays varchar2(15)
+);
+
+create table details (
+ref_num_commande number(10) constraint details_num_commande_fkey references commande(num_commande),
+ref_produit varchar2(20) constraint details_produit_fkey references produit(ref_produit),
+quantite number(10) not null,
+remise number(10),
+constraint details_pkey primary key(ref_num_commande,ref_produit)
+);

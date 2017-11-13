@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="xml" size="1797,442" id="entrepot.dao.xml" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020656E747265706F742F746172696B">
+  <children xsi:type="editmodel:ClassEditModel" name="XmlFournisseurDAO" location="936,210" size="208,110" id="entrepot.dao.xml/XmlFournisseurDAO">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="185,60">
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="entrepot.dao.xml/XmlFournisseurDAO#create(Lentrepot.bean.dimension.Fournisseur;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="entrepot.dao.xml/XmlFournisseurDAO#delete(Lentrepot.bean.dimension.Fournisseur;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="entrepot.dao.xml/XmlFournisseurDAO#find(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="entrepot.dao.xml/XmlFournisseurDAO#update(Lentrepot.bean.dimension.Fournisseur;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="entrepot.dao.xml/XmlDAO&lt;-entrepot.dao.xml/XmlFournisseurDAO" source="//@children.0" target="//@children.1/@sourceConnections.0" targetEnd="//@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="104,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XmlCategorieDAO" location="50,210" size="195,110" id="entrepot.dao.xml/XmlCategorieDAO">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="172,60">
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="entrepot.dao.xml/XmlCategorieDAO#create(Lentrepot.bean.dimension.Categorie;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="entrepot.dao.xml/XmlCategorieDAO#delete(Lentrepot.bean.dimension.Categorie;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="entrepot.dao.xml/XmlCategorieDAO#find(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="entrepot.dao.xml/XmlCategorieDAO#update(Lentrepot.bean.dimension.Categorie;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.7/@sourceConnections.0 //@children.8/@sourceConnections.0 //@children.0/@sourceConnections.0 //@children.4/@sourceConnections.0 //@children.3/@sourceConnections.0 //@children.5/@sourceConnections.0" autoLocated="true" id="entrepot.dao.xml/XmlDAO&lt;-entrepot.dao.xml/XmlCategorieDAO" source="//@children.1" target="//@children.6" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="97,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="73,110" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XmlClientDAO" location="275,210" size="172,110" id="entrepot.dao.xml/XmlClientDAO">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="149,60">
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="entrepot.dao.xml/XmlClientDAO#create(Lentrepot.bean.dimension.Client;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="entrepot.dao.xml/XmlClientDAO#delete(Lentrepot.bean.dimension.Client;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="entrepot.dao.xml/XmlClientDAO#find(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="entrepot.dao.xml/XmlClientDAO#update(Lentrepot.bean.dimension.Client;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="entrepot.dao.xml/XmlDAO&lt;-entrepot.dao.xml/XmlClientDAO" source="//@children.2" target="//@children.1/@sourceConnections.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="86,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XmlTempsDAO" location="1384,210" size="177,110" id="entrepot.dao.xml/XmlTempsDAO">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="154,60">
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="entrepot.dao.xml/XmlTempsDAO#create(Lentrepot.bean.dimension.Temps;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="entrepot.dao.xml/XmlTempsDAO#delete(Lentrepot.bean.dimension.Temps;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="entrepot.dao.xml/XmlTempsDAO#find(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="entrepot.dao.xml/XmlTempsDAO#update(Lentrepot.bean.dimension.Temps;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="entrepot.dao.xml/XmlDAO&lt;-entrepot.dao.xml/XmlTempsDAO" source="//@children.3" target="//@children.1/@sourceConnections.0" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XmlProduitDAO" location="1174,210" size="180,110" id="entrepot.dao.xml/XmlProduitDAO">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="157,60">
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="entrepot.dao.xml/XmlProduitDAO#create(Lentrepot.bean.dimension.Produit;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="entrepot.dao.xml/XmlProduitDAO#delete(Lentrepot.bean.dimension.Produit;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="entrepot.dao.xml/XmlProduitDAO#find(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="entrepot.dao.xml/XmlProduitDAO#update(Lentrepot.bean.dimension.Produit;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="entrepot.dao.xml/XmlDAO&lt;-entrepot.dao.xml/XmlProduitDAO" source="//@children.4" target="//@children.1/@sourceConnections.0" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="90,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XmlVendeurDAO" location="1591,210" size="186,110" id="entrepot.dao.xml/XmlVendeurDAO">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="163,60">
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="entrepot.dao.xml/XmlVendeurDAO#create(Lentrepot.bean.dimension.Vendeur;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="entrepot.dao.xml/XmlVendeurDAO#delete(Lentrepot.bean.dimension.Vendeur;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="entrepot.dao.xml/XmlVendeurDAO#find(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="entrepot.dao.xml/XmlVendeurDAO#update(Lentrepot.bean.dimension.Vendeur;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="entrepot.dao.xml/XmlDAO&lt;-entrepot.dao.xml/XmlVendeurDAO" source="//@children.5" target="//@children.1/@sourceConnections.0" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="XmlDAO" location="845,50" size="147,110" id="entrepot.dao.xml/XmlDAO">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,60">
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="entrepot.dao.xml/XmlDAO#create(LT;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="entrepot.dao.xml/XmlDAO#delete(LT;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="entrepot.dao.xml/XmlDAO#find(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="entrepot.dao.xml/XmlDAO#update(LT;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XmlFait_achatDAO" location="477,210" size="196,110" id="entrepot.dao.xml/XmlFait_achatDAO">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="173,60">
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="entrepot.dao.xml/XmlFait_achatDAO#create(Lentrepot.bean.fait.Fait_achat;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="entrepot.dao.xml/XmlFait_achatDAO#delete(Lentrepot.bean.fait.Fait_achat;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="entrepot.dao.xml/XmlFait_achatDAO#find(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="entrepot.dao.xml/XmlFait_achatDAO#update(Lentrepot.bean.fait.Fait_achat;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="entrepot.dao.xml/XmlDAO&lt;-entrepot.dao.xml/XmlFait_achatDAO" source="//@children.7" target="//@children.1/@sourceConnections.0" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="98,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XmlFait_ventesDAO" location="703,210" size="203,110" id="entrepot.dao.xml/XmlFait_ventesDAO">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="180,60">
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="entrepot.dao.xml/XmlFait_ventesDAO#create(Lentrepot.bean.fait.Fait_ventes;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="entrepot.dao.xml/XmlFait_ventesDAO#delete(Lentrepot.bean.fait.Fait_ventes;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="find" id="entrepot.dao.xml/XmlFait_ventesDAO#find(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="entrepot.dao.xml/XmlFait_ventesDAO#update(Lentrepot.bean.fait.Fait_ventes;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="entrepot.dao.xml/XmlDAO&lt;-entrepot.dao.xml/XmlFait_ventesDAO" source="//@children.8" target="//@children.1/@sourceConnections.0" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="101,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

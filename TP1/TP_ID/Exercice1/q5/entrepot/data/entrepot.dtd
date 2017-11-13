@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+OBJET : SCHEMA DE LA STRUCTURE D'UN FICHIER XML VALIDE POUR L'APLLICATION D'ALIMENTATION DE L'ENTREPOT 
+AUTHOR : DJEBIEN TARIK
+DATE : 29/10/2011
+-->
+
+<!--ENTREPOT-->
+<!ELEMENT entrepot (lesDimensions, lesFaits)>
+
+<!ELEMENT lesDimensions (lesTemps, lesVendeurs, lesCategories, lesProduits, lesClients, lesFournisseurs)>
+<!ELEMENT lesFaits (fait_ventes, fait_achat)>
+
+<!ELEMENT lesTemps (dim_temps)+>
+<!ELEMENT lesVendeurs (dim_vendeur)+>
+<!ELEMENT lesCategories (dim_categorie)+>
+<!ELEMENT lesProduits (dim_produit)+>
+<!ELEMENT lesClients (dim_client)+>
+<!ELEMENT lesFournisseurs (dim_fournisseur)+>
+
+
+
+<!-- DIMENSIONS -->
+
+<!-- DIMENSION TEMPS -->
+<!ELEMENT dim_temps EMPTY>
+<!ATTLIST dim_temps id ID #REQUIRED
+                    semaine (1|2|3|4) #REQUIRED
+                    mois (1|2|3|4|5|6|7|8|9|10|11|12) #REQUIRED
+                    trimestre  (1|2|3|4) #REQUIRED
+                    annee (2010|2011|2012) #REQUIRED
+>
+
+<!-- DIMENSION VENDEURS -->
+<!ELEMENT dim_vendeur EMPTY>
+<!ATTLIST dim_vendeur code_vendeur ID #REQUIRED>
+
+<!-- DIMENSION CATEGORIES -->
+<!ELEMENT dim_categorie (nom_categorie, description, illustration_url)>
+<!ATTLIST dim_categorie code_categorie ID #REQUIRED>
+<!ELEMENT nom_categorie (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT illustration_url (#PCDATA)>
+
+<!-- DIMENSION PRODUITS -->
+<!ELEMENT dim_produit (nom_produit, quantite_unite, prix_unite, unite_stock, unite_commandee, niveau_reappro)>
+<!ATTLIST dim_produit ref_produit ID #REQUIRED code_categorie IDREF #REQUIRED indisponible (0|1) #REQUIRED>
+<!ELEMENT nom_produit  (#PCDATA)>
+<!ELEMENT quantite_unite (#PCDATA)>
+<!ELEMENT prix_unite (#PCDATA)>
+<!ELEMENT unite_stock (#PCDATA)>
+<!ELEMENT unite_commandee (#PCDATA)>
+<!ELEMENT niveau_reappro (#PCDATA)>
+
+
+<!-- DIMENSION CLIENTS -->
+<!ELEMENT dim_client (societe, contact, fonction, adresse, ville, region, code_postal, pays, telephone, fax)>
+<!ATTLIST dim_client code_client ID #REQUIRED>
+<!ELEMENT societe (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+<!ELEMENT fonction (#PCDATA)>
+<!ELEMENT adresse (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT region (#PCDATA)>
+<!ELEMENT code_postal (#PCDATA)>
+<!ELEMENT pays (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>
+
+
+<!-- DIMENSION FOURNISSEURS -->
+<!ELEMENT dim_fournisseur EMPTY>
+<!ATTLIST dim_fournisseur code_fournisseur ID #REQUIRED>
+
+<!-- FAITS -->
+<!ELEMENT fait_ventes (temps, client, produit, vendeur)>
+<!ELEMENT fait_achat (produit, temps, fournisseur)>
+
+<!ELEMENT temps EMPTY>
+<!ATTLIST temps id_temps IDREF #REQUIRED>
+<!ELEMENT client EMPTY>
+<!ATTLIST client id_client IDREF #REQUIRED>
+<!ELEMENT produit EMPTY>
+<!ATTLIST produit id_produit IDREF #REQUIRED>
+<!ELEMENT vendeur EMPTY>
+<!ATTLIST vendeur id_vendeur IDREF #REQUIRED>
+<!ELEMENT fournisseur EMPTY>
+<!ATTLIST fournisseur id_fournisseur IDREF #REQUIRED>

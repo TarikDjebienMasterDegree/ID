@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entrepot SYSTEM "entrepot.dtd" >
+<!-- 
+objet : fichier XML test d'alimentation de l'entrepot 
+author : djebien tarik
+date : 31/10/2011
+-->
+<entrepot>
+  <lesDimensions>
+    <lesTemps>
+      <dim_temps annee="2010" semaine="1" trimestre="1" mois="1" id="temps1"/>
+      <dim_temps annee="2010" semaine="2" trimestre="1" mois="1" id="temps2"/>
+      <dim_temps annee="2010" semaine="3" trimestre="1" mois="1" id="temps3"/>
+      <dim_temps annee="2010" semaine="4" trimestre="1" mois="1" id="temps4"/>
+    </lesTemps>
+    <lesVendeurs>
+      <dim_vendeur code_vendeur="vendeur1"/>
+      <dim_vendeur code_vendeur="vendeur2"/>
+      <dim_vendeur code_vendeur="vendeur3"/>
+      <dim_vendeur code_vendeur="vendeur4"/>
+    </lesVendeurs>
+    <lesCategories>
+      <dim_categorie code_categorie="categorie1">
+        <nom_categorie>categorie2</nom_categorie>
+        <description>description_categorie2</description>
+        <illustration_url>data/images/categorie2.png</illustration_url>
+      </dim_categorie>
+    </lesCategories>
+    <lesProduits>
+      <dim_produit ref_produit="produit1" code_categorie="categorie1" indisponible="0" >
+        <nom_produit>produit1_name</nom_produit>
+        <quantite_unite>3</quantite_unite>
+        <prix_unite>5.5</prix_unite>
+        <unite_stock>200</unite_stock>
+        <unite_commandee>100</unite_commandee>
+        <niveau_reappro>50</niveau_reappro>
+      </dim_produit>
+    </lesProduits>
+    <lesClients>
+      <dim_client code_client="client1">
+        <societe>Auchan</societe>
+        <contact>Pepito</contact>
+        <fonction>RH</fonction>
+        <adresse>30 rue des canards</adresse>
+        <ville>Lille</ville>
+        <region>Nord</region>
+        <code_postal>59000</code_postal>
+        <pays>France</pays>
+        <telephone>03.20.54.78.96</telephone>
+        <fax>08.78.54.41.72</fax>
+      </dim_client>
+    </lesClients>
+    <lesFournisseurs>
+      <dim_fournisseur code_fournisseur="fournisseur1"/>
+    </lesFournisseurs>
+  </lesDimensions>
+  <lesFaits>
+    <fait_ventes>
+      <temps id_temps="temps1"/>
+      <client id_client="client1"/>
+      <produit id_produit="produit1"/>
+      <vendeur id_vendeur="vendeur1"/>
+    </fait_ventes>
+    <fait_achat>
+      <produit id_produit="produit1"/>
+      <temps id_temps="temps1"/>
+      <fournisseur id_fournisseur="fournisseur1"/>
+    </fait_achat>
+  </lesFaits>
+</entrepot>
